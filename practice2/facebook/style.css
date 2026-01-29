@@ -1,0 +1,85 @@
+            body{
+                background-color: rgb(206, 213, 216);
+                width: 600px;
+                height: 400px;
+            }
+            .paragraph{
+                position:relative;
+                top: 170px;
+                left: 400px;
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            .rega{
+
+                background-color: rgb(255, 255, 255);
+                width: 450px;
+                height: 330px;
+                position: relative;
+                left: 1000px;
+                text-align: center;
+                top: -100px;
+            }
+
+            #login{
+                top:15px;
+                text-align: left;
+                width: 93%;
+                font-size:medium;
+                height:40px;
+                position: relative;
+
+            }
+            #password{
+                position:relative;
+                top:25px;
+                text-align: left;
+                font-size:medium;
+                width: 93%;
+                height:40px;
+            }
+            
+            h1{
+                position:relative;
+                top: 200px;
+                left: 400px;
+                font-size: 70px;
+                color: rgb(0, 89, 255)
+            }
+
+            .button1{
+                position: relative;
+                top:50px;
+                width: 180px;
+                background-color: blue;
+                -webkit-text-fill-color: aliceblue;
+                width: 93%;
+                height: 40px;
+                font-size: large;
+            }
+
+            .forgot{
+                position:relative;
+                top:60px;
+                width: 100px;
+            }
+
+            .re{
+                position:relative;
+                left: 1080px;
+                top: -90px;
+                text-align: center;
+                left: 930px;
+            }
+
+            .button2{
+                position: relative;
+                top:110px;
+                width: 180px;
+                background-color: rgb(50, 138, 69);
+                -webkit-text-fill-color: aliceblue;
+                width: 85%;
+                font-size:medium;
+                height: 30px;
+            }
