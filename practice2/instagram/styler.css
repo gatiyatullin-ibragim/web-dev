@@ -1,0 +1,103 @@
+        body{
+            background-color: white'
+        }
+        .container{
+            display: flex;
+            max-width: 935px;
+            margin:0 auto;
+            align-items: center;
+        }
+        .greeting{
+            position:relative;
+            right: 300px;
+            top: -20px;
+            text-align: center;
+        }
+        .registration{
+            flex:1;
+            min-width:350px;
+            position:relative;
+            left: 1200px;
+            top: -650px;
+            width: 30%;
+            height:100%;
+            border-left: 1px solid #dbdbdb;
+            padding-left: 40px;
+            
+        }
+        #buttonFacebook{
+            
+            width: 85%;
+            height: 45px;
+            color: blue;
+            background-color: white;
+            border-radius: 50px;
+            border:1px solid #ccc;
+            padding: 8px;
+            outline: none;
+            top:80px;
+            position:relative;
+            font-size:large;
+            cursor: pointer;
+        }
+        #buttonNEW{
+            position:relative;
+            color:rgb(0, 89, 255);
+            background-color: white;
+            width: 85%;
+            top: 100px;
+            font-size:large;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            padding: 8px;
+            outline: none;
+            border-color: blue;
+            cursor: pointer;
+        }
+        .reg{
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            padding: 8px;
+            outline: none;
+            width:80%;
+            height:40px;
+            font-size:large;
+        }
+        #forgot{
+            color:rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            width: 470px;
+            height: 45px;
+            border-radius: 50px;
+            border: 1px solid #ffffff;
+            padding: 8px;
+            outline: none;
+            left:150px;
+            top: 40px;
+            position:relative;
+            font-size:large;
+            cursor: pointer;
+        }
+        #parol{
+            position: relative;
+            top: 15px;
+        }
+        #butENTER{
+            color:rgb(255, 255, 255);
+            background-color: blue;
+            width: 470px;
+            height: 45px;
+            border-radius: 50px;
+            border: 1px solid #ccc;
+            padding: 8px;
+            outline: none;
+            top: 30px;
+            position:relative;
+            font-size:large;
+            cursor: pointer;
+        }
+        #logMETA{
+            position: relative;
+            top: 100px;
+            left: 200px;
+        }
