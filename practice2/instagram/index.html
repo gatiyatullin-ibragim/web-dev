@@ -1,45 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Instagram login page</title>
-        <link rel="stylesheet" href="styler.css">
-        <meta name="viewpoint" content="width-device-width, initial-scale=1.0">
-    </head>
-
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="styler.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <body>
+    <img src="instagram.png" id="logo" alt="logo" width="50">
 
-    <img src="instagram.png" id="logo" style= mix-blend-mode:multiply width="70" heigh="70">
-    
-    <div class="greeting">
-    <h1>
-        Посмотрите какими<br>
-        моментами из жизни <br>
-        поделились ваши близкие<br> 
-        друзья.<br>
-        <img src="pic.png" id="photo" width="600" height="500">
+    <main class="main-container">
+        <div class="greeting">
+            <h1>Посмотрите, какими<br> моментами из жизни <br>поделились ваши близкие друзья.</h1>
+            <img src="pic.png" id="photo" alt="Instagram preview">
+        </div>
+        <div class="registration-container">
+            <div class="registration">
+                
+                
+                <form class="login-form">
+                    <input type="text" class="reg" placeholder="Имя пользователя, телефон или почта">
+                    <input type="password" class="reg" id="parol" placeholder="Пароль">
+                    <button type="submit" id="butENTER">Войти</button>
+                </form>
 
-    </h1>
-    <img src="">
-    <img src="">
-    <img src="">
+                <div class="divider">ИЛИ</div>
 
+                <button id="buttonFacebook">Войти через Facebook</button>
+                <a href="https://wsp.kbtu.kz/" id="forgot">Забыли пароль?</a>
+            </div>
+
+            <div class="signup-box">
+                <p>У вас еще нет аккаунта? <a href="https://wsp.kbtu.kz/">Зарегистрироваться</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="bottomTHING">
+    <div class="footer-links">
+        <a href="#">Meta</a>
+        <a href="#">Блог</a>
+        <a href="#">Помощь</a>
+        <a href="#">API</a>
+        <a href="#">Конфиденциальность</a>
+        <a href="#">Условия</a>
     </div>
-
-    <div class="registration">
-        <h2>
-            Войти в Instagram
-        </h2>
-        <input type="text" class="reg" placeholder="Имя пользователя, номер телефона или Электронный аддрес почты"> <br>
-        <input type="text" class="reg" id="parol" placeholder="пароль"> <br>
-        <button id="butENTER">войти</button><br>
-        <a href="https://wsp.kbtu.kz/" id="forgot">забыли пароль</a> <br>
-        <button id="buttonFacebook">войти    через Facebook</button><br>
-        <button id="buttonNEW">создать новый аккаунт</button><br>
-        <h3 id="logMETA">Meta</h3>
-
-    </div>
-
     
+    <div class="footer-copyright">
+        <select id="selLang">
+            <option>Русский</option>
+            <option>English</option>
+        </select>
+        <span>© 2026 Instagram from Meta</span>
+    </div>
+</footer>
 
 </body>
+</html>
