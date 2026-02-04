@@ -1,8 +1,8 @@
-/* 1. ОБНУЛЕНИЕ И БАЗОВЫЕ СТИЛИ */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Чтобы padding не раздувал блоки */
+    box-sizing: border-box;
 }
 
 body {
@@ -18,7 +18,7 @@ main {
     padding: 60px 20px;
 }
 
-/* 2. HERO СЕКЦИЯ (Верхняя часть) */
+
 .hero {
     text-align: center;
     margin-bottom: 60px;
@@ -48,16 +48,16 @@ main {
     cursor: pointer;
 }
 
-/* 3. ТАРИФЫ (FLEXBOX) */
+
 .container-flex {
     display: flex;
     gap: 20px;
-    align-items: stretch; /* Чтобы все карточки были одной высоты */
+    align-items: stretch;
     margin-bottom: 80px;
 }
 
 .card {
-    flex: 1; /* Все карточки равной ширины */
+    flex: 1; 
     border: 1px solid #d0d7de;
     border-radius: 10px;
     padding: 32px;
@@ -66,7 +66,7 @@ main {
     position: relative;
 }
 
-/* Выделение карточки Enterprise (синяя рамка) */
+
 .card.recommended {
     border: 2px solid #0969da;
     box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
@@ -117,15 +117,14 @@ main {
     position: relative;
 }
 
-/* Маленькая галочка перед пунктами списка */
-.card li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #57606a;
+
+.card li::before{
+    position:absolute;
+    left:0;
+    content:"✓";
+    color:#57606a;
 }
 
-/* 4. АДДОНЫ (GRID) */
 .addons {
     margin-top: 40px;
 }
@@ -137,7 +136,6 @@ main {
 
 .addons-grid {
     display: grid;
-    /* Создаем сетку: 3 колонки, каждая занимает 1 часть (fraction) */
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
@@ -155,20 +153,19 @@ main {
     background-color: #f6f8fa;
 }
 
-/* 5. АДАПТИВНОСТЬ (Breakpoint) */
 @media (max-width: 992px) {
     .container-flex {
-        flex-direction: column; /* Карточки тарифов в столбик */
+        flex-direction: column;
     }
 
     .addons-grid {
-        grid-template-columns: repeat(2, 1fr); /* Аддоны по 2 в ряд */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
     .addons-grid {
-        grid-template-columns: 1fr; /* Аддоны в один столбик */
+        grid-template-columns: 1fr;
     }
     
     .hero h1 {
