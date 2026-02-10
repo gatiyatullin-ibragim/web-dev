@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do web-app</title>
+    <link rel="stylesheet" href="todostyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header>ToDo List</header>
+
+    <main> 
+        <section class = "Task_manager">
+            <h2>ToDo List</h2>
+            <form id="task-form">
+                <label for="new-task-input">New task:</label>
+                <input type="text" id="new-task-input" placeholder="Enter task" required>
+                <button type="submit" class="btn-add">Add</button>
+            </form>
+        </section>
+
+
+
+        <section class = "task-list">
+            <h2>Your Tasks</h2>
+            <ul id="todo-list">
+                <li class="task-item">
+                    <span class="task-text">Example</span>
+                    <button class="del-btn">del</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+
+    <script src = "script.js"></script>
+</body>
+</html>
