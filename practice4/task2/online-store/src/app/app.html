@@ -1,1 +1,20 @@
-<app-product-list></app-product-list>
+<header>
+  <h1 class="header1">Kaspi Store</h1>
+  <div class="category-menu">
+    @for (cat of categories; track cat.id) {
+      <button class="buttons"
+        (click)="selectCategory(cat.id)"
+        [class.active]="selectedCategoryId() === cat.id">
+        {{ cat.name }}
+      </button>
+    }
+  </div>
+</header>
+
+<main>
+  @if (selectedCategoryId()) {
+    <app-product-list [products]="filteredProducts()"></app-product-list>
+  } @else {
+    <p class="hint">Пожалуйста, выберите категорию</p>
+  }
+</main>

@@ -1,0 +1,27 @@
+main{
+    background-color: rgb(238, 223, 17);    
+}
+
+.header1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cyan;
+}
+
+.category-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 183, 238);
+}
+
+.buttons{
+    background-color:rgb(1, 249, 38)
+}
+
+.hint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
