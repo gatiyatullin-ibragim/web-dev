@@ -1,0 +1,149 @@
+.photos-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.btn-back {
+  background: none;
+  color: #e94560;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.4rem 0;
+  margin-top: 0.4rem;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.btn-back:hover { opacity: 0.7; }
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1a1a2e;
+}
+
+.subtitle {
+  color: #888;
+  margin-top: 0.2rem;
+}
+
+/* ── Loading ── */
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem 0;
+  color: #888;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #f0f2f5;
+  border-top-color: #e94560;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Error / Empty ── */
+.error-card,
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 3rem;
+  border-radius: 16px;
+  color: #888;
+}
+
+.error-card span,
+.empty-state span { font-size: 2.5rem; }
+
+.error-card {
+  color: #e94560;
+  background: #fff8f8;
+  border: 2px solid #fce4e8;
+}
+
+/* ── Photos Grid ── */
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.photo-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.photo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.photo-wrapper {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.photo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.photo-card:hover .photo-wrapper img {
+  transform: scale(1.05);
+}
+
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 26, 46, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.photo-card:hover .photo-overlay {
+  opacity: 1;
+}
+
+.photo-overlay p {
+  color: #fff;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.photo-caption {
+  font-size: 0.75rem;
+  color: #888;
+  padding: 0.5rem 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
