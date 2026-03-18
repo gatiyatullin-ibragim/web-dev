@@ -17,7 +17,7 @@ class Blogger(Lichnost):
         self.klikuha = klikuha
         self.mestoraboty = mestoraboty
 
-    def greeting(self):
+    def pozdorovatsa(self):
         return f"Всем привет с вами {self.klikuha} и я {self.mestoraboty}"
 
     def byebye(self):
@@ -38,7 +38,7 @@ class Makan(Blogger):
     def pristegnut(self):
         return"Одеваем барсетку"
 
-    def predstavtesPozhaluysta(self):
+    def pozdorovatsa(self):
         return f"Меня зовут Макан по кличке {self.klikuha} место работы: {self.mestoraboty}"
 
 
