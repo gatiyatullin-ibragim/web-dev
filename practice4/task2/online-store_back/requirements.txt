@@ -1,9 +1,4 @@
-attrs==26.1.0
-cffi==2.0.0
-cryptography==46.0.5
-filelock==3.25.2
+asgiref==3.11.1
 Django==6.0.3
-gps==3.27.5
-packaging==26.0
-pycparser==3.0
-wheel==0.46.3
+djangorestframework==3.17.0
+sqlparse==0.5.5
